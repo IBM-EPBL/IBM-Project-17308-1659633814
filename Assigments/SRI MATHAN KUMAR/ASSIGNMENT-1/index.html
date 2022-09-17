@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+         *
+         {
+             margin: 0;
+             padding: 0;
+             font-family: sans-serif,'Poppins';
+             background-color: #cdcdcd;
+         }
+         body
+         {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         .title
+         {
+             font-size: 1.5rem;
+             background-color: transparent;
+             color: rgba(0, 0, 0, 0.65);
+         }
+         
+         .container
+         {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             padding: 30px;
+             background-color: #fff;
+             border-radius: 10px;
+             transform: scale(1.25);
+         }
+        input
+        {
+          margin: 5px;
+          padding: 5px;
+          width: 100%;
+          outline: none;
+          background-color: transparent;
+          border: none;
+        }
+        input[type="text"],input[type="email"]
+        {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+        }
+
+        .btn
+        {
+            background-color: #3c45fa;
+            color: #fff;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <form class="container">
+            <h1 class="title">Sign Up</h1>
+            <input type="text" placeholder="Name"  required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="text" placeholder="Mobile no" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="State" required>
+            <input type="text" placeholder="Country" required>
+            <input type="submit" class="btn" value="Register">
+        </form>
+    </body>
+</html>
